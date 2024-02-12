@@ -1,0 +1,65 @@
+.history-item-container {
+  list-style-type: none;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.time-accessed {
+  margin-bottom: 10px;
+  color: #64748b;
+  font-size: 15px;
+  font-weight: bold;
+}
+.history-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.history-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.domain-logo {
+  height: 28px;
+  width: 28px;
+  margin-right: 14px;
+}
+.title-domain-container {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  margin: 0px;
+  color: #475569;
+  font-weight: bold;
+}
+.domain {
+  margin: 0px;
+  color: #64748b;
+  font-weight: 400;
+}
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .history-item-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  .time-accessed {
+    width: 100px;
+  }
+  .title {
+    margin-right: 10px;
+  }
+  .title-domain-container {
+    flex-direction: row;
+  }
+}
